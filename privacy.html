@@ -12,7 +12,8 @@
 <body>
 <h1>Privacy policy</h1>
 <p>This covers the small personal apps listed on the <a href="index.html">home page</a> (Unmapped Streets, Drift
-and Bear-z-Pod). They are private tools with no public sign-up. This page explains what they store and why.</p>
+and Bear-z-Pod). They are small personal projects, shared with a limited number of testers rather than offered through an
+open public sign-up. This page explains what they store and why.</p>
 
 <h2>What we store</h2>
 <ul>
@@ -40,8 +41,41 @@ at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permi
 the app made in your Drive. To have anything stored on our server deleted as well, ask the owner below and your
 account and anything you've added will be deleted.</p>
 
+<h2 id="drift">Drift</h2>
+<p>Drift is the to-do app. This section covers what it stores beyond the general points above.</p>
+<ul>
+  <li><strong>What it stores:</strong> your sign-in email; everything you add in Drift (tasks, journal, health and
+  mood entries, lists and settings, including any API keys you type into Settings); notification tokens, so it can
+  remind you while Drift is closed; and the Google Drive refresh token used for backups and photos (see Google
+  Drive above).</li>
+  <li><strong>Where and how:</strong> on your phone, and synced to a Supabase database over HTTPS. Supabase
+  encrypts stored data (AES-256, see <a href="https://supabase.com/security">supabase.com/security</a>). Every
+  request is checked against the signed-in account, and the database only lets an account reach its own rows.</li>
+  <li><strong>Who can see it:</strong> as the database owner, the developer can technically see the stored data. It
+  is never looked at, sold, shared or used for anything except running Drift.</li>
+  <li><strong>Shared tasks:</strong> people you share a task with see that task.</li>
+  <li><strong>How long:</strong> kept until you delete it or delete your account.</li>
+  <li><strong>Reach out:</strong> if you use Reach out, Drift reads your contacts on the phone only to show the
+  list; only the person you pick is saved with the task.</li>
+</ul>
+
+<h3>Sleep (Android app)</h3>
+<p>If you switch on the Sleep page in the Android app and allow it, Drift reads sleep sessions from Health Connect.
+It only reads and never writes. It reads each night's start and end, the sleep stages if your sleep app records
+them, and which app recorded it. Nights are stored and synced like the rest of your Drift data, and are used only
+to show your sleep and shape your My day schedule and the list. Sleep data is not used for advertising and is never
+sold. Turning the permission off in Health Connect stops new reads, and deleting your account removes the stored
+nights.</p>
+
+<h3 id="drift-delete">Deleting your Drift account</h3>
+<p>In Drift, go to Settings → Account → Delete my account. That removes everything on the server and on that phone.
+Backups in Google Drive are files in your own Drive, so they stay until you delete them yourself. Or email
+<a href="mailto:bearzpu@gmail.com">bearzpu@gmail.com</a> from the address you signed in with, naming Drift, and
+the account will be deleted.</p>
+
 <h2>Contact</h2>
-<p>Via the owner's GitHub profile: <a href="https://github.com/Bearzpu">github.com/Bearzpu</a>.</p>
+<p>Email <a href="mailto:bearzpu@gmail.com">bearzpu@gmail.com</a>, or use the owner's GitHub profile:
+<a href="https://github.com/Bearzpu">github.com/Bearzpu</a>.</p>
 
 <p><a href="index.html">Back to home</a></p>
 </body>
